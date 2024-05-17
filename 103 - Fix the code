@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("What's \"wrong\" with this?");
+  }
+}
+
+
+
+/* public class Main
+public void main (string[] args);
+{  System.Out.Println('What's "wrong with this?') */
