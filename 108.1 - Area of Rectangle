@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //Variables!
+    int Length;
+    int Width;
+    int Area;
+    System.out.println("Welcome to my Area Program!");
+    //Input
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Enter the length: ");
+      Length = user_input.nextInt();
+    System.out.println("Enter the width: ");
+      Width = user_input.nextInt();
+
+    //Calculation
+    Area = Length * Width;
+    //Output
+    System.out.println("Area = " + Area);
+  }
+}
