@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    int numStud = 2200;
+      System.out.println("There are about " + numStud + " students at Colonel By.");
+    double massJup = 1.898;
+    System.out.println("Jupiter's mass is about " + massJup + " x 10^27.");
+    char intial = 'C';
+    System.out.println("My first initial is " + intial + ".");
+    boolean yesNo = true;
+    System.out.println("The answer to the question is " + yesNo + ".");
+    byte age = 25;
+    System.out.println("This person is " + age + " years old.");
+    int population = 36686;
+    System.out.println("Monaco's population was " + population + " people in 2021.");
+  }
+}
