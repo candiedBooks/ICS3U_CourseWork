@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    //This is actually the first line of a poem because I couldn't pick a favorite song or quote
+    //Here's the first line
+    System.out.println("The synopsis looked good,");
+    //Here's the first line but with each word on a separate line.
+    System.out.println("The\nsynopsis\nlooked\ngood,");
+
+//Now here's the whole poem, because I really love this poem :]
+    //System.out.println("The synopsis looked good, \nthe cover looked nice, \nyou opened the book, \nand began a new life. \nYou found a new home, \nyou met some new friends, \nyou kept on reading, \nhoping it would never end. \nYou danced through the pages, \nyou sang out the words \nyou felt all their joy, \nand all their pain and hurt.\n \nThe pages cut your fingers, \nand the words cut your heart, \nlike the author had a knife, \nand was tearing your soul apart. \nYou laughed with the characters, \nand with them, you cried, \nyou fell in love with them, too \nbut with them, you died, \nand when the book reached its end, \nand your broken heart couldn’t heal, \nyou suddenly realized that \nIt's \nNot \nReal.");
+  }
+}
