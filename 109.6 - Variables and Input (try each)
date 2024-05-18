@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //Variables
+    String city;
+    char intial;
+    int year;
+    double numb;
+    String school;
+    school = "Colonel By";
+    //Input
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Where were you born?  Enter a string value:");
+    city = user_input.nextLine();
+    System.out.println("What is your middle initial? Enter a character:");
+    intial = user_input.next().charAt(0);
+    System.out.println("What year were you born?  Enter the 4 digit integer value:");
+    year = user_input.nextInt();
+    System.out.println("Pick a number between 16 and 17.  Enter the decimal number:");
+    numb = user_input.nextDouble();
+    System.out.println("Thank you for your input.");
+    //Output
+    System.out.println(city + " is beautiful.");
+    System.out.println(intial +", can I call you, \""+intial+"\" - I think you must be "+year+" + "+numb+" years old and attend \""+school+"\".");
+  }
+}
