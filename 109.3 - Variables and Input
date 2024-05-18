@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //Variables
+    int grade1;
+    int grade2;
+    int grade3;
+    int grade4;
+    double avrg;
+    //Input
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Enter four course grades:");
+    grade1 = user_input.nextInt();
+    grade2 = user_input.nextInt();
+    grade3 = user_input.nextInt();
+    grade4 = user_input.nextInt();
+    //Calculation
+    avrg = (grade1 + grade2 + grade3 + grade4)/4.0;
+    System.out.println("The average is: " + avrg);
+  }
+}
