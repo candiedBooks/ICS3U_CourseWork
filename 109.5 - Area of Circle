@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //Variables and Constants
+    double radius;
+    double area;
+    double circ;
+    double pi;
+    pi = 3.14; 
+    //Input
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Enter the radius: ");
+    radius = user_input.nextDouble();
+    //Calculations
+    area = pi * (radius * radius);
+    circ = ((2 * pi * radius)*10)/10;
+    //Output
+    System.out.println("A = " + area + " units ^2");
+    System.out.println("C =  " + circ + " units");
+  }
+}
