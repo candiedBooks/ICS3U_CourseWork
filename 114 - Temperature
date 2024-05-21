@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    int far;
+    double celc;
+    
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Temp in F:");
+    far = user_input.nextInt();
+    celc = (Math.round((((far - 32)*(5.0/9)))*(10)))/(10.0);
+    
+    System.out.println("Temp in C:");
+    System.out.println(celc);
+  }
+}
