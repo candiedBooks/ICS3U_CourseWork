@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //Variables
+    int sRoot;
+    double sRootSol;
+    int exp1;
+    int exp2;
+    double expSol;
+    double round;
+    double rounds;
+    double ceil;
+    double floor;
+    int lowLim;
+    int upLim;
+    double randm;
+
+    //Square Root
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Square Root\nInput a positive number:");
+    sRoot = user_input.nextInt();
+    sRootSol = Math.sqrt(sRoot);
+    System.out.println("The square root of "+sRoot+" is "+sRootSol);
+    System.out.println("\n****\n");
+    
+    //Exponents
+    System.out.println("Exponents\nInput an integer:");
+    exp1 = user_input.nextInt();
+    System.out.println("Input a second integer:");
+    exp2 = user_input.nextInt();
+    expSol = (int) Math.pow(exp1, exp2);
+    System.out.println(exp1 + " to the power of "+exp2+" is: "+expSol);
+    System.out.println("\n****\n");
+
+    //Rounding
+    System.out.println("Rounding, Ceiling and Floor\nInput a decimal value:");
+    round = user_input.nextDouble();
+    rounds = Math.round(round);
+    ceil = Math.ceil(round);
+    floor = Math.floor(round);
+    System.out.println(round + " rounds to "+ (int)rounds +" \n" + round +" ceiling is "+ceil+"\n"+ round +" floor is " + floor);
+    System.out.println("\n****\n");
+
+    //Random
+    System.out.println("Random\nEnter the lower limit:");
+    lowLim = user_input.nextInt();
+    System.out.println("Enter the upper limit:");
+    upLim = user_input.nextInt();
+    randm = Math.floor( (upLim - lowLim)*Math.random()+lowLim);
+    System.out.println("A random number between "+lowLim+" and "+upLim+" is " + randm);
+  }
+}
