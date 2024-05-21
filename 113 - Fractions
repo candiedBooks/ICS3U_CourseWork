@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    int num;
+    int denom;
+    int result;
+    int numR;
+    
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("numerator=");
+    num = user_input.nextInt();
+    System.out.println("denominator=");
+    denom = user_input.nextInt();
+
+    result = (num / denom);
+    numR = (num%denom);
+
+    System.out.println(num + " / "+denom+" is equivalent to "+result+" and "+numR+" / " + denom);
+  }
+}
