@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //Variables
+    int numb;
+    int dig1;
+    int dig2;
+    int dig3;
+    int dig4;
+    //Input
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Please enter a positive, 4-digit number (1111 to 9999):");
+    numb = user_input.nextInt();
+    //Calculations
+    dig1 = numb/1000;
+    dig2 = (numb%1000)/100;
+    dig3 = ((numb%1000)%100)/10;
+    dig4 = (((numb%1000)%100)%10)/1;
+    //Output
+    System.out.println("The digits of "+numb+" are "+dig1+", "+dig2+", "+dig3+", and "+dig4+".");
+  }
+}
