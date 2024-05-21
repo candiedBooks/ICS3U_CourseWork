@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    int cents;
+    int quarters;
+    int dimes;
+    int nickles;
+    int pennies;
+    
+    Scanner user_input = new Scanner(System.in);
+    System.out.println("Enter cents:");
+    cents = user_input.nextInt();
+
+    quarters = (cents/25);
+    dimes = ((cents%25)/10);
+    nickles = (((cents%25)%10)/5);
+    pennies = ((((cents%25)%10)%5)/1);
+
+    System.out.println("Quarters " +quarters+ ", dimes "+dimes+", nickels "+nickles+", pennies "+pennies);
+    
+  }
+}
