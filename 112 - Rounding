@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    double numb;
+    int deimals;
+    double round;
+
+        Scanner user_input = new Scanner(System.in);
+    System.out.println("Enter first number:");
+    numb = user_input.nextDouble();
+    System.out.println("Number of decimal places:");
+    deimals = user_input.nextInt();
+
+    round = (Math.round(numb*(Math.pow(10, deimals))))/(Math.pow(10, deimals));
+    System.out.println(round);
+  }
+}
